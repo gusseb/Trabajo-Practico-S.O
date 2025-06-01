@@ -1,0 +1,39 @@
+
+CORTAR:palabra
+COCINAR:palabra
+EMPLATAR:palabra
+
+SUMA:Num1:Num2
+RESTA:Num1:Num2
+
+INVERSO:palabra
+MAYUS:palabra
+
+-------------------------------------------------
+Para el makefile (en bash/ubuntu)
+nano Makefile
+CC = gcc
+CFLAGS = -Wall -pthread
+
+all: Servidor Cliente
+
+servidor: Servidor.c
+	$(CC) $(CFLAGS) Servidor.c -o Servidor
+
+cliente: Cliente.c
+	$(CC) $(CFLAGS) Cliente.c -o Cliente
+
+clean:
+	rm -f Servidor Cliente
+
+Para terminar:
+1- Ctrl + O para guardar
+2- Enter para confirmar
+3- Ctrl + X para salir
+------------------------------------------------
+Compilar archivo makefile con
+make clean
+make
+------------------------------------------------
+./Servidor
+./Cliente
