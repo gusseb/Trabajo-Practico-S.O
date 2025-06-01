@@ -1,0 +1,6 @@
+1)Abra la terminal en la ubicacion del archivo ej1.c
+2)Escriba en la terminal gcc -c ej1.c
+3)Ahora escriba en la terminal gcc ej1.o -o cocina
+4)Ya puede ejecutar el archivo usando ./cocina
+
+
